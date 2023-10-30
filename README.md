@@ -1,7 +1,7 @@
 ## Introduction
 |Sample Name|Description|
 |-------------|-------|
-|[Image Classification In Android](#image-classification-in-android)|Sample Android application to demonstrate execution of `Efficientnet` model with ENN SDK|
+|[Image Classification In Android](#image-classification-in-android)|Sample Android application to demonstrate execution of `Inception v4` model with ENN SDK|
 |[NNC Model Tester](#nnc-model-tester)|Sample C++ program that demonstrates execution of model with ENN SDK|
 
 ## Android (Kotlin) Samples
@@ -9,7 +9,7 @@ This section provides an overview of Android (Kotlin) sample applications.
 Each entry details the functionality of the sample application, its location, and instructions for running it.
 
 ### Image Classification In Android
-The "Image Classification in Android" sample application demonstrates the execution of a converted "[Efficientnet](https://github.com/PINTO0309/PINTO_model_zoo/tree/main/004_efficientnet)" model using the ENN Framework.
+The "Image Classification in Android" sample application demonstrates the execution of a converted "[Inception v4](https://tfhub.dev/tensorflow/lite-model/inception_v4_quant/1/default/1)" model using the ENN Framework.
 
 #### Functionality
 The application accepts input from either a camera feed or an image file and classifies the object within the input. 
