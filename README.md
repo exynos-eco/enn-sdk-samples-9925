@@ -5,6 +5,8 @@
 |[Object Detection In Android](#object-detection-in-android)|Sample Android application to demonstrate execution of `YOLOv5` model with ENN SDK|
 |[Segmentation In Android](#segmentation-in-android)|Sample Android application to demonstrate execution of `DeeplabV3` model with ENN SDK|
 |[Image Enhance In Android](#image-enhance-in-android)|Sample Android application to demonstrate execution of `Zero-DCE` model with ENN SDK|
+|[Depth Estimation In Andriod](#depth-estimation-in-andriod)|Sample Android application to demonstrate execution of `MiDaS v2` model with ENN SDK|
+|[Performance Comparison](#performance-comparison)|Sample Android application to demonstrate the difference between ENN SDK and TFLite|
 |[NNC Model Tester](#nnc-model-tester)|Sample C++ program that demonstrates execution of model with ENN SDK|
 <!--|[Pose Estimation In Android](#pose-estimation-in-android)|Sample Android application to demonstrate execution of `PoseNet` model with ENN SDK|-->
 
@@ -176,6 +178,29 @@ To modify the model used in the application, follow these steps:
 1. If the model's inputs and outputs differ from the pre-designed Sample Application, change the `preProcess()` and `postProcess()` functions.
 
 ***
+
+### Performance Comparison
+The "Performance Comparison" sample application provides a side-by-side analysis of the execution time differences between the ENN SDK and TFLite.
+
+#### Functionality
+This application builds upon the "Image Classification in Android" sample application.
+In addition to executing the NNC model using the ENN Framework, it also runs the corresponding TFLite model. 
+The results of the execution, along with the inference time for both the ENN Framework and TFLite, are displayed at the bottom of the application interface. 
+
+#### Location
+This sample is located under the `enn-sdk-samples-9925/perf-compare` directory in the [Github](https://github.com/exynos-eco/enn-sdk-samples-9925) repository.
+
+#### Getting Started
+To utilize this sample application, follow these steps:
+1. Download or clone the sample application from the [Github](https://github.com/exynos-eco/enn-sdk-samples-9925) repository.
+1. Open the sample application project in Android Studio.
+1. Connect the ERD Board to the computer.
+1. Run the application (using Shift + F10).
+1. Select either "Camera" or "Image" mode and provide the data for inference.
+
+***
+
+
 
 
 
