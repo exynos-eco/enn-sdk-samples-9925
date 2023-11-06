@@ -9,13 +9,13 @@ The classified items, their corresponding scores, and the inference time are dis
 ## Getting Started
 To utilize this sample application, follow these steps:
 1. Download or clone the sample application from this repository.
-2. Open the sample application project in Android Studio.
-3. Connect the ERD Board to the computer.
-4. Run the application (using Shift + F10).
-5. Select either "Camera" or "Image" mode and provide the data for inference.
+1. Open the sample application project in Android Studio.
+1. Connect the ERD Board to the computer.
+1. Run the application (using Shift + F10).
+1. Select either "Camera" or "Image" mode and provide the data for inference.
 
 To modify the model used in the application, follow these steps:
 1. Copy the desired model file to the `assets` directory within the project.
-2. Copy the corresponding label text file to the `assets` directory.
-3. Modify parameters in the ModelConstants.kt file to reflect the new model's specifications.
-4. If you model inputs and outputs are different from the pre-designed Sample Application, you will need to change the `preProcess()` and `postProcess()` functions.
+1. Copy the corresponding label text file to the `assets` directory.
+1. Modify parameters in the ModelConstants.kt file to reflect the new model's specifications.
+1. If the model's inputs and outputs differ from the pre-designed Sample Application, change the `preProcess()` and `postProcess()` functions.
