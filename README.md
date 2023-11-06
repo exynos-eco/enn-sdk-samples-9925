@@ -4,6 +4,7 @@
 |[Image Classification In Android](#image-classification-in-android)|Sample Android application to demonstrate execution of `Inception v4` model with ENN SDK|
 |[Object Detection In Android](#object-detection-in-android)|Sample Android application to demonstrate execution of `YOLOv5` model with ENN SDK|
 |[Segmentation In Android](#segmentation-in-android)|Sample Android application to demonstrate execution of `DeeplabV3` model with ENN SDK|
+|[Image Enhance In Android](#image-enhance-in-android)|Sample Android application to demonstrate execution of `Zero-DCE` model with ENN SDK|
 |[NNC Model Tester](#nnc-model-tester)|Sample C++ program that demonstrates execution of model with ENN SDK|
 
 ## Android (Kotlin) Samples
@@ -40,12 +41,13 @@ To modify the model used in the application, follow these steps:
 ***
 
 ### Object Detection In Android
-The "Object Detection in Android" sample application demonstrates the execution of a converted "[YOLOv5](https://github.com/ultralytics/yolov5)" model using the ENN Framework. 
+The "Object Detection in Android" sample application demonstrates the execution of a converted "[YOLOv5](https://github.com/ultralytics/yolov5)" model using the ENN Framework.
+The model is converting using ENN SDK Service with "**Default**" hardware type option.
 
 #### Functionality
 The application accepts input from either a camera feed or an image file and identifies the object within the input. 
 A bounding box is drawn around the detected item, and the label and score associated with the object are displayed.
-Additionally, the inference time is presented at the bottom of the application interface. 
+Additionally, the inference time is displayed at the bottom of the application interface.
 
 #### Location
 The sample is located in the `enn-sdk-samples-9925/object-detection` directory within the [Github](https://github.com/exynos-eco/enn-sdk-samples-9925) repository.
@@ -67,12 +69,13 @@ To modify the model used in the application, follow these steps:
 ***
 
 ### Segmentation In Android
-The "Segmentation in Android" sample application demonstrates the execution of a converted "[DeeplabV3](https://tfhub.dev/tensorflow/lite-model/deeplabv3/1/default/1)" model using the ENN Framework. 
+The "Segmentation in Android" sample application demonstrates the execution of a converted "[DeeplabV3](https://tfhub.dev/tensorflow/lite-model/deeplabv3/1/default/1)" model using the ENN Framework.
+The model is converting using ENN SDK Service with "**Default**" hardware type option.
 
 #### Functionality
-The application takes input from either a camera feed or an image file and performs segmentation on the object within the input. 
+The application accepts input from either a camera feed or an image file and performs segmentation on the object within the input. 
 Each pixel of the segmented object is overlayed with a color corresponding to its label, providing a visual representation of the classification.
-Additionally, the inference time is presented at the bottom of the application interface.
+Additionally, the inference time is displayed at the bottom of the application interface.
 
 #### Location
 The sample is located in the `enn-sdk-samples-9925/segmentation` directory within the [Github](https://github.com/exynos-eco/enn-sdk-samples-9925) repository.
@@ -92,6 +95,33 @@ To modify the model used in the application, follow these steps:
 
 ***
 
+### Image Enhance In Android
+The "Image Enhance In Android" sample application demonstrates the execution of a converted "[Zero-DCE](https://tfhub.dev/sayannath/lite-model/zero-dce/1)" model using the ENN Framework.
+The model is converting using ENN SDK Service with "**Default**" hardware type option.
+
+#### Functionality
+The application accepts input from an image file and enhaces it.
+Specifically, it takes low-light images and improves their quality.
+Additionally, the inference time is displayed at the bottom of the application interface.
+
+#### Location
+The sample is located in the `enn-sdk-samples-9925/image-enhance` directory within the [Github](https://github.com/exynos-eco/enn-sdk-samples-9925) repository.
+
+#### Getting Started
+To utilize this sample application, follow these steps:
+1. Download or clone the sample application from the [Github](https://github.com/exynos-eco/enn-sdk-samples-9925) repository.
+1. Open the sample application project in Android Studio.
+1. Connect the ERD Board to the computer.
+1. Run the application (using Shift + F10).
+1. Provide the image data for inference.
+
+To modify the model used in the application, follow these steps:
+1. Copy the desired model file to the `assets` directory within the project.
+1. Modify parameters in the ModelConstants.kt file to reflect the new model's specifications.
+1. If the model's inputs and outputs differ from the pre-designed Sample Application, change the `preProcess()` and `postProcess()` functions.
+
+***
+
 
 
 
@@ -101,7 +131,7 @@ To modify the model used in the application, follow these steps:
 This section provides an overview of the native sample program. 
 Each entry details the functionality of the sample program, its location, and instructions for running it.
 
-
+***
 
 ### NNC Model Tester
 The "NNC Model Test" sample program illustrates the process of executing an NNC model using the ENN Framework.
