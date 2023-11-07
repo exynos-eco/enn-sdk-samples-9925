@@ -4,11 +4,11 @@
 |[Image Classification In Android](#image-classification-in-android)|Sample Android application to demonstrate execution of `Inception v4` model with ENN SDK|
 |[Object Detection In Android](#object-detection-in-android)|Sample Android application to demonstrate execution of `YOLOv5` model with ENN SDK|
 |[Segmentation In Android](#segmentation-in-android)|Sample Android application to demonstrate execution of `DeeplabV3` model with ENN SDK|
+|[Pose Estimation In Android](#pose-estimation-in-android)|Sample Android application to demonstrate execution of `PoseNet` model with ENN SDK|
 |[Image Enhance In Android](#image-enhance-in-android)|Sample Android application to demonstrate execution of `Zero-DCE` model with ENN SDK|
 |[Depth Estimation In Andriod](#depth-estimation-in-andriod)|Sample Android application to demonstrate execution of `MiDaS v2` model with ENN SDK|
 |[Performance Comparison](#performance-comparison)|Sample Android application to demonstrate the difference between ENN SDK and TFLite|
 |[NNC Model Tester](#nnc-model-tester)|Sample C++ program that demonstrates execution of model with ENN SDK|
-<!--|[Pose Estimation In Android](#pose-estimation-in-android)|Sample Android application to demonstrate execution of `PoseNet` model with ENN SDK|-->
 
 ## Android (Kotlin) Samples
 This section provides an overview of Android (Kotlin) sample applications. 
@@ -97,7 +97,7 @@ To modify the model used in the application, follow these steps:
 1. If the model's inputs and outputs differ from the pre-designed Sample Application, change the `preProcess()` and `postProcess()` functions.
 
 ***
-<!--
+
 ### Pose Estimation In Android
 The "Pose Estimation In Android" sample application demonstrates the execution of a converted "[PoseNet](https://tfhub.dev/tensorflow/tfjs-model/posenet/mobilenet/float/075/1/default/1)" model using the ENN Framework.
 The model is converting using ENN SDK Service with "**Default**" hardware type option.
@@ -124,7 +124,6 @@ To modify the model used in the application, follow these steps:
 1. If the model's inputs and outputs differ from the pre-designed Sample Application, change the `preProcess()` and `postProcess()` functions.
 
 ***
--->
 
 ### Image Enhance In Android
 The "Image Enhance In Android" sample application demonstrates the execution of a converted "[Zero-DCE](https://tfhub.dev/sayannath/lite-model/zero-dce/1)" model using the ENN Framework.
@@ -155,6 +154,7 @@ To modify the model used in the application, follow these steps:
 
 ### Depth Estimation In Andriod
 The "Depth Estimation in Android" sample application demonstrates the execution of a converted "[MiDaS V2](https://tfhub.dev/intel/lite-model/midas/v2_1_small/1/lite/1)" model using the ENN Framework.
+The model is converting using ENN SDK Service with "**Default**" hardware type option.
 
 #### Functionality
 The application accepts input from either a camera feed or an image file and performs segmentation on the object within the input.
