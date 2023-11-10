@@ -123,29 +123,35 @@ class CameraFragment : Fragment(), ModelExecutor.ExecutorListener {
         modelExecutor.process(processImage(bitmapBuffer))
     }
 
-    private fun processImage(image: Bitmap): Bitmap {
-        val rotatedCroppedImage = createCroppedBitmap(image)
-
-        return Bitmap.createScaledBitmap(
-            rotatedCroppedImage, INPUT_SIZE_W, INPUT_SIZE_H, true
+    private fun processImage(bitmap: Bitmap): Bitmap {
+        val rotationMatrix = Matrix().apply { postRotate(90F) }
+        val rotatedBitmap = Bitmap.createBitmap(
+            bitmap, 0, 0, bitmap.width, bitmap.height, rotationMatrix, true
         )
+        val (scaledWidth, scaledHeight) = calculateScaleSize(
+            rotatedBitmap.width, rotatedBitmap.height
+        )
+        val scaledBitmap = Bitmap.createScaledBitmap(
+            rotatedBitmap, scaledWidth, scaledHeight, true
+        )
+        val (x, y) = calculateCenterCropPosition(scaledBitmap)
+
+        return Bitmap.createBitmap(scaledBitmap, x, y, INPUT_SIZE_W, INPUT_SIZE_H)
     }
 
-    private fun createCroppedBitmap(image: Bitmap): Bitmap {
-        val matrix = Matrix().apply { postRotate(90F) }
-        val cropDim = calculateCropDimensions(image)
-
-        return Bitmap.createBitmap(
-            image, cropDim[0], cropDim[1], cropDim[2], cropDim[2], matrix, true
+    private fun calculateScaleSize(bitmapWidth: Int, bitmapHeight: Int): Pair<Int, Int> {
+        val scaleFactor = maxOf(
+            INPUT_SIZE_W.toFloat() / bitmapWidth, INPUT_SIZE_H.toFloat() / bitmapHeight
         )
+
+        return Pair((bitmapWidth * scaleFactor).toInt(), (bitmapHeight * scaleFactor).toInt())
     }
 
-    private fun calculateCropDimensions(image: Bitmap): IntArray {
-        return if (image.width > image.height) {
-            intArrayOf((image.width - image.height) / 2, 0, image.height)
-        } else {
-            intArrayOf(0, (image.height - image.width) / 2, image.width)
-        }
+    private fun calculateCenterCropPosition(scaledBitmap: Bitmap): Pair<Int, Int> {
+        return Pair(
+            (scaledBitmap.width - INPUT_SIZE_W) / 2,
+            (scaledBitmap.height - INPUT_SIZE_H) / 2
+        )
     }
 
     private fun setUI() {

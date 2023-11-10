@@ -1,10 +1,11 @@
 # Object Detection In Android
-The "Object Detection in Android" sample application demonstrates the execution of a converted "[YOLOv5](https://github.com/ultralytics/yolov5)" model using the ENN Framework. 
+The "Object Detection in Android" sample application demonstrates the execution of a converted "[YOLOv5](https://github.com/ultralytics/yolov5)" model using the ENN Framework.
+The model is converted using ENN SDK Service with the "**Default**" hardware type option.
 
 ## Functionality
-The application accepts input from either a camera feed or an image file and identifies the object within the input. 
+The application accepts input from a camera feed or an image file and identifies the object within the input. 
 A bounding box is drawn around the detected item, and the label and score associated with the object are displayed.
-Additionally, the inference time is presented at the bottom of the application interface. 
+Additionally, the inference time is displayed at the bottom of the application interface.
 
 ## Getting Started
 To utilize this sample application, follow these steps:
@@ -12,7 +13,7 @@ To utilize this sample application, follow these steps:
 1. Open the sample application project in Android Studio.
 1. Connect the ERD Board to the computer.
 1. Run the application (using Shift + F10).
-1. Select either "Camera" or "Image" mode and provide the data for inference.
+1. Select "Camera" or "Image" mode and provide the data for inference.
 
 To modify the model used in the application, follow these steps:
 1. Copy the desired model file to the `assets` directory within the project.
