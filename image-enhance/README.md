@@ -1,9 +1,9 @@
 # Image Enhance In Android
 The "Image Enhance In Android" sample application demonstrates the execution of a converted "[Zero-DCE](https://tfhub.dev/sayannath/lite-model/zero-dce/1)" model using the ENN Framework.
-The model is converting using ENN SDK Service with "**Default**" hardware type option.
+The model is converted using ENN SDK Service with the "**Default**" hardware type option.
 
 ## Functionality
-The application accepts input from an image file and enhaces it.
+The application accepts input from an image file and enhances it.
 Specifically, it takes low-light images and improves their quality.
 Additionally, the inference time is displayed at the bottom of the application interface.
 
