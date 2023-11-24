@@ -1,5 +1,5 @@
 # Depth Estimation In Andriod
-This sample application demonstrates the execution of a converted [MiDaS V2](https://tfhub.dev/intel/lite-model/midas/v2_1_small/1/lite/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [MiDaS V2](https://www.kaggle.com/models/intel/midas/frameworks/tfLite/variations/v2-1-small-lite/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 ## Functionality

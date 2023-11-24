@@ -1,5 +1,5 @@
 # Segmentation In Android
-This sample application demonstrates the execution of a converted [DeeplabV3](https://tfhub.dev/tensorflow/lite-model/deeplabv3/1/default/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [DeeplabV3](https://www.kaggle.com/models/tensorflow/deeplabv3/frameworks/tfLite/variations/default/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 ## Functionality

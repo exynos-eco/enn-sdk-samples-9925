@@ -19,7 +19,7 @@ Each sample application entry provides the details of the functionality of the s
 ***
 
 ### Image Classification In Android
-This sample application demonstrates the execution of a converted [Inception v4](https://tfhub.dev/tensorflow/lite-model/inception_v4_quant/1/default/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [Inception v4](https://www.kaggle.com/models/tensorflow/inception/frameworks/tfLite/variations/v4-quant/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Accelerate** hardware type option.
 
 #### Functionality
@@ -74,7 +74,7 @@ To modify the model used in the sample application:
 ***
 
 ### Segmentation In Android
-This sample application demonstrates the execution of a converted [DeeplabV3](https://tfhub.dev/tensorflow/lite-model/deeplabv3/1/default/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [DeeplabV3](https://www.kaggle.com/models/tensorflow/deeplabv3/frameworks/tfLite/variations/default/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 #### Functionality
@@ -101,7 +101,7 @@ To modify the model used in the sample application:
 ***
 
 ### Pose Estimation In Android
-This sample application demonstrates the execution of a converted [PoseNet](https://tfhub.dev/tensorflow/tfjs-model/posenet/mobilenet/float/075/1/default/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [PoseNet](https://www.kaggle.com/models/tensorflow/posenet-mobilenet/frameworks/tfJs/variations/float-075/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 #### Functionality
@@ -128,7 +128,7 @@ To modify the model used in the sample application:
 ***
 
 ### Image Enhance In Android
-This sample application demonstrates the execution of a converted [Zero-DCE](https://tfhub.dev/sayannath/lite-model/zero-dce/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [Zero-DCE](https://www.kaggle.com/models/sayannath235/zero-dce) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 #### Functionality
@@ -155,7 +155,7 @@ To modify the model used in the sample application:
 ***
 
 ### Depth Estimation In Andriod
-This sample application demonstrates the execution of a converted [MiDaS V2](https://tfhub.dev/intel/lite-model/midas/v2_1_small/1/lite/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [MiDaS V2](https://www.kaggle.com/models/intel/midas/frameworks/tfLite/variations/v2-1-small-lite/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 #### Functionality

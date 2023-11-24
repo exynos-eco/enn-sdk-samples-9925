@@ -1,5 +1,5 @@
 # Image Classification In Android
-This sample application demonstrates the execution of a converted [Inception v4](https://tfhub.dev/tensorflow/lite-model/inception_v4_quant/1/default/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [Inception v4](https://www.kaggle.com/models/tensorflow/inception/frameworks/tfLite/variations/v4-quant/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Accelerate** hardware type option.
 
 ## Functionality

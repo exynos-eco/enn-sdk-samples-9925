@@ -1,5 +1,5 @@
 # Image Enhance In Android
-This sample application demonstrates the execution of a converted [Zero-DCE](https://tfhub.dev/sayannath/lite-model/zero-dce/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [Zero-DCE](https://www.kaggle.com/models/sayannath235/zero-dce) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 ## Functionality

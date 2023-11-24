@@ -1,5 +1,5 @@
 # Pose Estimation In Android
-This sample application demonstrates the execution of a converted [PoseNet](https://tfhub.dev/tensorflow/tfjs-model/posenet/mobilenet/float/075/1/default/1) model using the ENN framework.
+This sample application demonstrates the execution of a converted [PoseNet](https://www.kaggle.com/models/tensorflow/posenet-mobilenet/frameworks/tfJs/variations/float-075/versions/1) model using the ENN framework.
 The model is converted using ENN SDK service with the **Default** hardware type option.
 
 ## Functionality
